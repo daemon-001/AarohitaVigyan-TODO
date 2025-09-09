@@ -54,7 +54,7 @@ AarohitaVigyan-TODO/
 │   │   └── index.css
 │   └── package.json
 ├── requirements.txt
-├── manage.py
+├── run_server.py
 └── README.md
 ```
 
@@ -91,18 +91,18 @@ AarohitaVigyan-TODO/
 
 4. **Run database migrations:**
    ```bash
-   python manage.py makemigrations
-   python manage.py migrate
+   python run_server.py makemigrations
+   python run_server.py migrate
    ```
 
 5. **Create superuser (optional):**
    ```bash
-   python manage.py createsuperuser
+   python run_server.py createsuperuser
    ```
 
 6. **Start Django development server:**
    ```bash
-   python manage.py runserver
+   python run_server.py runserver
    ```
    The API will be available at `http://localhost:8000`
 
@@ -154,7 +154,7 @@ curl -X PATCH http://localhost:8000/api/tasks/1/
 ## Usage
 
 1. **Start both servers:**
-   - Django backend: `python manage.py runserver` (port 8000)
+   - Django backend: `python run_server.py runserver` (port 8000)
    - React frontend: `npm start` (port 3000)
 
 2. **Access the application:**
