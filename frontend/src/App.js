@@ -32,11 +32,12 @@ function App() {
   };
 
   // Add new task
-  const addTask = async (title) => {
+  const addTask = async (title, priority = 'medium') => {
     try {
       const response = await axios.post(`${API_BASE_URL}/tasks/`, {
         title: title,
-        is_done: false
+        is_done: false,
+        priority: priority
       });
       setTasks([response.data, ...tasks]);
       setError(null);

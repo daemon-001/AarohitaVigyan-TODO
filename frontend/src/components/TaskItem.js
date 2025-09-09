@@ -1,7 +1,7 @@
 import React from 'react';
 import './TaskItem.css';
 
-const TaskItem = ({ task, onToggle }) => {
+const TaskItem = ({ task, onToggle, animationDelay = 0 }) => {
   const handleToggle = () => {
     onToggle(task.id);
   };
@@ -17,7 +17,10 @@ const TaskItem = ({ task, onToggle }) => {
   };
 
   return (
-    <div className={`task-item ${task.is_done ? 'completed' : ''}`}>
+    <div 
+      className={`task-item ${task.is_done ? 'completed' : ''} priority-${task.priority}`}
+      style={{ animationDelay: `${animationDelay}s` }}
+    >
       <div className="task-content">
         <button
           className={`task-checkbox ${task.is_done ? 'checked' : ''}`}
@@ -28,7 +31,15 @@ const TaskItem = ({ task, onToggle }) => {
         </button>
         
         <div className="task-details">
-          <h4 className="task-title">{task.title}</h4>
+          <div className="task-header">
+            <h4 className="task-title">{task.title}</h4>
+                 <div className="priority-display">
+                   <span className={`priority-indicator priority-${task.priority}`}></span>
+                   <span className="priority-text">
+                     {task.priority.charAt(0).toUpperCase() + task.priority.slice(1)} Priority
+                   </span>
+                 </div>
+          </div>
           <p className="task-meta">
             Created: {formatDate(task.created_at)}
             {task.updated_at !== task.created_at && (

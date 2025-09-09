@@ -1,81 +1,84 @@
 .add-task {
-  padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-2xl);
-  background: var(--bg-primary);
-  border-bottom: 1px solid var(--border-primary);
-  position: relative;
+  padding: var(--space-6) var(--space-8);
+  background: var(--bg-secondary);
+  min-height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .add-task-form {
-  max-width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .input-group {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--space-3);
   align-items: stretch;
+  padding: var(--space-2);
   background: var(--bg-primary);
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-sm);
-  border: 2px solid var(--border-primary);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-xs);
+  min-height: auto;
 }
 
 .input-group:focus-within {
-  border-color: var(--border-focus);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .task-input {
   flex: 1;
-  padding: var(--spacing-md) var(--spacing-lg);
-  border: none;
-  border-radius: var(--radius-md);
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  background: transparent;
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.875rem;
+  font-weight: 400;
   color: var(--text-primary);
+  background: transparent;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .task-input::placeholder {
   color: var(--text-muted);
-  font-weight: 400;
 }
 
 .task-input:focus {
   outline: none;
-  color: var(--text-primary);
 }
 
-.task-input:disabled {
-  background: var(--bg-secondary);
-  cursor: not-allowed;
-  color: var(--text-muted);
+/* Priority dropdown alignment in input group */
+.input-group .priority-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .add-button {
-  padding: var(--spacing-md) var(--spacing-xl);
-  background: var(--gradient-primary);
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.875rem;
+  font-weight: 600;
   color: var(--text-inverse);
-  border: none;
-  border-radius: var(--radius-md);
-  font-size: 16px;
-  font-weight: 700;
+  background: var(--accent-primary);
+  border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
   white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-xs);
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .add-button:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
 
 .add-button:active:not(:disabled) {
@@ -87,34 +90,37 @@
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
-  background: var(--text-muted);
 }
-
 
 @media (max-width: 768px) {
   .add-task {
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
+    padding: var(--space-4) var(--space-6);
   }
   
   .input-group {
     flex-direction: column;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-    align-items: stretch;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    min-height: auto;
   }
   
   .task-input {
-    width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: var(--space-3) var(--space-4);
+    font-size: 1rem;
+    height: auto;
   }
   
+  /* Priority dropdown responsive styles handled by Dropdown component */
+  
   .add-button {
-    width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    font-size: 15px;
+    padding: var(--space-3) var(--space-4);
+    font-size: 1rem;
+    height: auto;
   }
 }
 
-
-
-
+@media (max-width: 480px) {
+  .add-task {
+    padding: var(--space-3) var(--space-4);
+  }
+}

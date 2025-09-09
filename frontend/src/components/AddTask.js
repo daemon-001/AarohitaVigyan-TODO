@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
+import Dropdown from './Dropdown';
 import './AddTask.css';
 
 const AddTask = ({ onAddTask }) => {
   const [title, setTitle] = useState('');
+  const [priority, setPriority] = useState('medium');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const priorityOptions = [
+    { value: 'low', label: 'Low Priority', badge: { type: 'low' } },
+    { value: 'medium', label: 'Medium Priority', badge: { type: 'medium' } },
+    { value: 'high', label: 'High Priority', badge: { type: 'high' } }
+  ];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -11,8 +19,9 @@ const AddTask = ({ onAddTask }) => {
 
     setIsSubmitting(true);
     try {
-      await onAddTask(title.trim());
+      await onAddTask(title.trim(), priority);
       setTitle('');
+      setPriority('medium');
     } catch (error) {
       console.error('Error adding task:', error);
     } finally {
@@ -31,6 +40,14 @@ const AddTask = ({ onAddTask }) => {
             placeholder="Add a new task..."
             className="task-input"
             disabled={isSubmitting}
+          />
+          <Dropdown
+            value={priority}
+            onChange={setPriority}
+            options={priorityOptions}
+            className="priority-dropdown"
+            disabled={isSubmitting}
+            placeholder="Select priority..."
           />
           <button
             type="submit"
