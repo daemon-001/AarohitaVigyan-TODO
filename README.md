@@ -3,6 +3,16 @@
 A modern, full-stack task management application built with Django REST Framework and React, featuring professional design and advanced theming capabilities.
 
 
+## 📸 Visulas
+### Dark Theme View
+<img width="1920" height="1080" alt="Screenshot 2025-09-09 122604" src="https://github.com/user-attachments/assets/e78a6c1f-9869-401f-ae75-76fc461c138e" />
+### Light Theme View
+<img width="1920" height="1080" alt="Screenshot 2025-09-09 122546" src="https://github.com/user-attachments/assets/a8b8dd07-4c6c-4709-9207-f10e164208f9" />
+### Mobile View
+<img width="381" height="842" alt="Screenshot 2025-09-09 122521" src="https://github.com/user-attachments/assets/9d2e5b47-6dff-41f8-ad6a-3cf1e2eb8625" />
+
+
+
 ## ✨ Features
 
 ### **Smart Task Management**
@@ -178,50 +188,3 @@ curl "http://localhost:8000/api/tasks/?priority=high"
 - **High Priority**: Show only high-priority tasks
 - **Medium Priority**: Show only medium-priority tasks  
 - **Low Priority**: Show only low-priority tasks
-
-## **Technical Features**
-
-### **Frontend Architecture**
-- **React Context API**: Efficient theme state management across components
-- **CSS Custom Properties**: Dynamic theming system with CSS variables
-- **Component-based Design**: Modular, reusable UI components
-- **Responsive Design**: Mobile-first approach with breakpoint optimization
-- **Modern CSS**: Flexbox, Grid, and advanced animations
-
-### **Theme System**
-- **CSS Variables**: Centralized color and spacing management
-- **Local Storage**: Persistent theme preferences
-- **Smooth Transitions**: CSS transitions for theme changes
-- **Context Provider**: React context for theme state
-- **Dynamic Styling**: Real-time theme switching without page reload
-
-### **UI/UX Enhancements**
-- **Clean Interface**: Simplified design without card clutter
-- **Priority Indicators**: Color-coded priority badges for quick identification
-- **Micro-interactions**: Subtle animations and hover effects
-- **Accessibility**: Proper ARIA labels and keyboard navigation
-- **Loading States**: Visual feedback for all async operations
-- **Error Handling**: User-friendly error messages
-
-### **Performance Optimizations**
-- **Efficient Rendering**: Optimized React component structure
-- **CSS Optimization**: Minimal, focused stylesheets
-- **Responsive Images**: Optimized for different screen sizes
-- **Smooth Animations**: Hardware-accelerated CSS transitions
-
-## **Development Notes**
-
-### **Recent Updates**
-- ✅ **Priority System**: Complete priority management with filtering
-- ✅ **Clean UI Design**: Removed card clutter for better focus
-- ✅ **Theme System**: Complete light/dark mode implementation
-- ✅ **Responsive Design**: Perfect mobile and desktop experience
-- ✅ **Component Architecture**: Clean, modular React components
-- ✅ **CSS Architecture**: Organized styles with custom properties
-- ✅ **User Experience**: Smooth animations and micro-interactions
-
-### **Browser Support**
-- **Modern Browsers**: Chrome, Firefox, Safari, Edge (latest versions)
-- **Mobile Browsers**: iOS Safari, Chrome Mobile, Samsung Internet
-- **CSS Features**: CSS Grid, Flexbox, Custom Properties, Backdrop Filter
-
