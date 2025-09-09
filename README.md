@@ -4,10 +4,13 @@ A modern, full-stack task management application built with Django REST Framewor
 
 
 ## 📸 Visulas
+
 ### Dark Theme View
 <img width="1920" height="1080" alt="Screenshot 2025-09-09 122604" src="https://github.com/user-attachments/assets/e78a6c1f-9869-401f-ae75-76fc461c138e" />
+
 ### Light Theme View
 <img width="1920" height="1080" alt="Screenshot 2025-09-09 122546" src="https://github.com/user-attachments/assets/a8b8dd07-4c6c-4709-9207-f10e164208f9" />
+
 ### Mobile View
 <img width="381" height="842" alt="Screenshot 2025-09-09 122521" src="https://github.com/user-attachments/assets/9d2e5b47-6dff-41f8-ad6a-3cf1e2eb8625" />
 
