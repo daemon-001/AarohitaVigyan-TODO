@@ -18,7 +18,7 @@ A modern, full-stack task management application built with Django REST Framewor
 
 
 
-## ✨ What Makes This Special?
+## ✨ Features
 
 ### **Smart Task Management**
 - **Simple & Clean**: Add tasks with just a few clicks
