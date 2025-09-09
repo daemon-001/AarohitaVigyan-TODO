@@ -2,7 +2,8 @@
 
 A modern, full-stack task management application built with Django REST Framework and React, featuring professional design and advanced theming capabilities.
 
-## ✨ What Makes This Special?
+
+## ✨ Features
 
 ### **Smart Task Management**
 - **Priority System**: Set High, Medium, or Low priority for each task
