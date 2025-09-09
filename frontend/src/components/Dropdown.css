@@ -226,17 +226,32 @@
   .dropdown-trigger {
     padding: var(--space-3) var(--space-4);
     font-size: 1rem;
+    min-height: 48px;
   }
   
   .dropdown-option {
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-4) var(--space-4);
     font-size: 1rem;
+    min-height: 48px;
   }
   
-  .priority-dropdown .dropdown-trigger,
+  .priority-dropdown .dropdown-trigger {
+    min-width: auto;
+    width: auto;
+    padding: var(--space-3) var(--space-2);
+    font-size: 1rem;
+    min-height: 48px;
+  }
+  
   .filter-dropdown .dropdown-trigger {
     min-width: auto;
     width: 100%;
+  }
+  
+  .priority-dropdown .dropdown-menu {
+    min-width: 180px;
+    right: 0;
+    left: auto;
   }
 }
 

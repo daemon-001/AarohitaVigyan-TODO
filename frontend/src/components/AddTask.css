@@ -1,5 +1,5 @@
 .add-task {
-  padding: var(--space-6) var(--space-8);
+  padding: var(--space-4) var(--space-6);
   background: var(--bg-secondary);
   min-height: auto;
   display: flex;
@@ -14,12 +14,12 @@
 
 .input-group {
   display: flex;
-  gap: var(--space-3);
+  gap: var(--space-2);
   align-items: stretch;
-  padding: var(--space-2);
+  padding: var(--space-1);
   background: var(--bg-primary);
   border: 1px solid var(--border-primary);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-xs);
   min-height: auto;
@@ -32,12 +32,12 @@
 
 .task-input {
   flex: 1;
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-2) var(--space-3);
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--text-primary);
   background: transparent;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   transition: all var(--transition-fast);
   height: auto;
   display: flex;
@@ -60,12 +60,12 @@
 }
 
 .add-button {
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-2) var(--space-3);
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--text-inverse);
   background: var(--accent-primary);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: all var(--transition-fast);
   white-space: nowrap;
@@ -94,7 +94,7 @@
 
 @media (max-width: 768px) {
   .add-task {
-    padding: var(--space-4) var(--space-6);
+    padding: var(--space-3) var(--space-4);
   }
   
   .input-group {
@@ -105,17 +105,25 @@
   }
   
   .task-input {
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-3) var(--space-3);
     font-size: 1rem;
-    height: auto;
+    min-height: 44px;
+    border-radius: var(--radius-md);
   }
   
-  /* Priority dropdown responsive styles handled by Dropdown component */
+  /* Priority dropdown and button container */
+  .input-group .priority-dropdown {
+    order: 2;
+    align-self: flex-start;
+    margin-bottom: var(--space-2);
+  }
   
   .add-button {
     padding: var(--space-3) var(--space-4);
     font-size: 1rem;
-    height: auto;
+    min-height: 44px;
+    border-radius: var(--radius-md);
+    order: 3;
   }
 }
 
