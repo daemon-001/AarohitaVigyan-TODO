@@ -2,21 +2,6 @@
 
 A modern, full-stack task management application built with Django REST Framework and React, featuring professional design and advanced theming capabilities.
 
-## 📸 Visuals
-
-### Dark Theme View
-<img width="1920" height="1080" alt="Screenshot 2025-09-09 093704" src="https://github.com/user-attachments/assets/dfefb203-cfa9-473d-b67e-805eb78e0569" />
-
-### Light Theme View
-<img width="1920" height="1080" alt="Screenshot 2025-09-09 093655" src="https://github.com/user-attachments/assets/82ac71da-a4fa-4f8a-95a4-0713b73ba5af" />
-
-### Mobile View
-<img width="400" height="865" alt="Screenshot 2025-09-09 093601" src="https://github.com/user-attachments/assets/80230f0a-c91c-4177-99a1-06bbc7306ee1" />
-
-### Full View
-<img width="1906" height="1079" alt="Screenshot 2025-09-09 093426" src="https://github.com/user-attachments/assets/600b4cc8-1050-456b-a311-bc49cd233528" />
-
-
 
 ## ✨ Features
 
