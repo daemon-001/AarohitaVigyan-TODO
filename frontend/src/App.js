@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { ThemeProvider } from './contexts/ThemeContext';
+import './styles/themes.css';
 import './App.css';
 import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
 import Header from './components/Header';
+import ThemeToggle from './components/ThemeToggle';
 
 const API_BASE_URL = 'http://localhost:8000/api';
 
@@ -62,18 +65,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Header />
-      <div className="container">
-        <AddTask onAddTask={addTask} />
-        {error && <div className="error-message">{error}</div>}
-        <TaskList 
-          tasks={tasks} 
-          loading={loading} 
-          onToggleTask={toggleTask}
-        />
+    <ThemeProvider>
+      <div className="App">
+        <div className="container">
+          <Header />
+          <AddTask onAddTask={addTask} />
+          {error && <div className="error-message">{error}</div>}
+          <TaskList 
+            tasks={tasks} 
+            loading={loading} 
+            onToggleTask={toggleTask}
+          />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 

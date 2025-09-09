@@ -1,5 +1,5 @@
 """
-Django settings for aarohita_vigyan project.
+Django settings for TODO Manager project.
 """
 
 from pathlib import Path

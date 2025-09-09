@@ -1,6 +1,6 @@
 {
-  "short_name": "Aarohita Vigyan",
-  "name": "Aarohita Vigyan Task Manager",
+  "short_name": "TODO Manager",
+  "name": "TODO Manager - Task Management System",
   "icons": [
     {
       "src": "favicon.ico",
