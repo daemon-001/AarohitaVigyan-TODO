@@ -18,7 +18,7 @@ A modern, full-stack task management application built with Django REST Framewor
 - **Error Handling**: Friendly messages when things go wrong
 - **Loading States**: Visual feedback so you always know what's happening
 
-## **Project Structure** (Don't worry, it's organized!)
+## **Project Structure**
 
 ```
 AarohitaVigyan-TODO/
@@ -37,16 +37,16 @@ AarohitaVigyan-TODO/
 └── requirements.txt         # Python packages needed
 ```
 
-## **Getting Started** (Let's do this together!)
+## **Getting Started**
 
-### **Prerequisites** (What you'll need)
+### **Prerequisites**
 - **Python 3.8+** - The language that powers our backend
 - **Node.js 14+** - For our React frontend
 - **A few minutes** - That's it!
 
-### **Backend Setup** (The Django Magic)
+### **Backend Setup**
 
-1. **Create your Python environment** (keeps things clean):
+1. **Create your Python environment**:
    ```bash
    python -m venv venv
    # On Windows:
@@ -55,29 +55,29 @@ AarohitaVigyan-TODO/
    source venv/bin/activate
    ```
 
-2. **Install the magic ingredients**:
+2. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Set up your database** (where your tasks live):
+3. **Set up your database**:
    ```bash
    python run_server.py makemigrations
    python run_server.py migrate
    ```
 
-4. **Create an admin account** (optional, but useful):
+4. **Create an admin account** (optional):
    ```bash
    python run_server.py createsuperuser
    ```
 
-5. **Start your Django server** (the heart of the app):
+5. **Start your Django server**:
    ```bash
    python run_server.py runserver
    ```
    Your API is now running at `http://localhost:8000`
 
-### **Frontend Setup** (The React Beauty)
+### **Frontend Setup**
 
 1. **Navigate to the frontend folder**:
    ```bash
@@ -95,9 +95,9 @@ AarohitaVigyan-TODO/
    ```
    Your beautiful app is now at `http://localhost:3000`
 
-## **How to Use** (It's super intuitive!)
+## **How to Use**
 
-1. **Start both servers** (in separate terminals):
+1. **Start both servers**:
    - Backend: `python run_server.py runserver` 
    - Frontend: `npm start`
 
@@ -109,7 +109,7 @@ AarohitaVigyan-TODO/
    - Watch tasks automatically organize themselves
    - Use it on your phone - it's fully responsive!
 
-## **API Endpoints** (For the developers)
+## **API Endpoints**
 
 | Method | Endpoint | What it does |
 |--------|----------|--------------|
@@ -117,7 +117,7 @@ AarohitaVigyan-TODO/
 | `POST` | `/api/tasks/` | Create a new task |
 | `PATCH` | `/api/tasks/<id>/` | Toggle task completion |
 
-### **Example API Calls** (If you want to play around)
+### **Example API Calls**
 
 **Create a task:**
 ```bash
